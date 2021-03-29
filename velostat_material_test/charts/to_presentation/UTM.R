@@ -21,6 +21,9 @@ output <- output + xlab("Force (gf)") + ylab("Resistance (\u03a9)") + ggtitle("F
 print(output)
 #dev.off()
 
+ggsave("charts/to_presentation/FR1asc_line_UTM.png", plot = output, width = 5, dpi = 300, units = "in")
+
+
 pdf("charts/to_presentation/FR1asc_line_UTM.pdf")
 print(output)
 dev.off()
